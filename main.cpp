@@ -1,4 +1,5 @@
 #include <cmath>
+#include <cstdlib>
 
 #include "gg.h"
 
