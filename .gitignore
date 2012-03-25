@@ -11,9 +11,10 @@ ggsample01
 #
 .DS_Store
 build/
-DerivedData/
 *.xcodeproj/*
 !project.pbxproj
+*.xcuserdatad/
+DerivedData/
 #
 # for Windows
 #
