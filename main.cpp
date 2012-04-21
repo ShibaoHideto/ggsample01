@@ -2,6 +2,7 @@
 #include <cstdlib>
 
 #include "gg.h"
+using namespace gg;
 
 /*
 ** 画面表示
@@ -29,7 +30,7 @@ static void resize(int w, int h)
 static void init(void)
 {
   // ゲームグラフィックス特論の都合にもとづく初期化
-  gg::ggInit();
+  ggInit();
   
   // 背景色
   glClearColor(1.0, 1.0, 1.0, 1.0);
