@@ -1285,7 +1285,7 @@ bool gg::ggInit(int width, int height, int redbits, int greenbits, int bluebits,
   glfwOpenWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
   // GLFW のウィンドウを開く
-  if (glfwOpenWindow(width, height, redbits, greenbits, bluebits, alphabits, depthbits, stencilbits, GLFW_WINDOW) == GL_FALSE)
+  if (glfwOpenWindow(width, height, redbits, greenbits, bluebits, alphabits, depthbits, stencilbits, mode) == GL_FALSE)
   {
     // ウィンドウが開けない
 #if defined(_WIN32)
