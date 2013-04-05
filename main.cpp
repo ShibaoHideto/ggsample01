@@ -1,53 +1,26 @@
-#include <cmath>
-#include <cstdlib>
-
 #include "gg.h"
 using namespace gg;
-
-/*
-** 画面表示
-*/
-static void display(void)
-{
-  // 画面クリア
-  glClear(GL_COLOR_BUFFER_BIT);
-
-  glutSwapBuffers();
-}
-
-/*
-** ウィンドウのリサイズ
-*/
-static void resize(int w, int h)
-{
-  // ウィンドウ全体をビューポートにする
-  glViewport(0, 0, w, h);
-}
-
-/*
-** 初期化
-*/
-static void init(void)
-{
-  // ゲームグラフィックス特論の都合にもとづく初期化
-  ggInit();
-  
-  // 背景色
-  glClearColor(1.0, 1.0, 1.0, 1.0);
-}
 
 /*
 ** メインプログラム
 */
 int main(int argc, char *argv[])
 {
-  glutInit(&argc, argv);
-  glutInitDisplayMode(GLUT_RGB | GLUT_DEPTH | GLUT_DOUBLE);
-  glutCreateWindow("ggsample01");
-  glutDisplayFunc(display);
-  glutReshapeFunc(resize);
-  init();
-  glutMainLoop();
+  // ゲームグラフィックス特論の都合にもとづく初期化
+  if (!ggInit()) return 1;
+  
+  // 背景色
+  glClearColor(1.0, 1.0, 1.0, 1.0);
+
+  // ウィンドウが開いている間くり返し描画する
+  while (glfwGetWindowParam(GLFW_OPENED))
+  {
+    // 画面消去
+    glClear(GL_COLOR_BUFFER_BIT);
+    
+    // ダブルバッファリング
+    glfwSwapBuffers();
+  }
 
   return 0;
 }
