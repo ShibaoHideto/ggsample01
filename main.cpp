@@ -1,9 +1,9 @@
 #include "gg.h"
 using namespace gg;
 
-/*
-** メインプログラム
-*/
+//
+// メインプログラム
+//
 int main(int argc, char *argv[])
 {
   // ゲームグラフィックス特論の都合にもとづく初期化
