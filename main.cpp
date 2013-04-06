@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 {
   // ゲームグラフィックス特論の都合にもとづく初期化
   if (!ggInit()) return 1;
-  
+
   // 背景色
   glClearColor(1.0, 1.0, 1.0, 1.0);
 
@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
   {
     // 画面消去
     glClear(GL_COLOR_BUFFER_BIT);
-    
+
     // ダブルバッファリング
     glfwSwapBuffers();
   }
