@@ -156,7 +156,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
-					libglfw.a,
+					libglfw_macos.a,
 					"-framework",
 					Cocoa,
 					"-framework",
@@ -184,7 +184,7 @@
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = (
-					libglfw.a,
+					libglfw_macos.a,
 					"-framework",
 					Cocoa,
 					"-framework",
