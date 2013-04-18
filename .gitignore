@@ -18,11 +18,7 @@ DerivedData/
 # for Windows
 #
 Thumbs.db
-*.obj
 *.dll
-*.ncb
-*.lib
-!GLFW.lib
 *.ncb
 *.suo
 *.vcproj.*.*.user
